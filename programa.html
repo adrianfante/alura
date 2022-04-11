@@ -1,0 +1,61 @@
+<meta charset="utf-8">
+
+estoy definiendo la edad de christian
+<br>
+HTML
+<br>
+La edad de Chirstian es ...
+<br>
+?
+
+<br>
+<br>
+JavaScript
+
+<br>
+	<h1>Programa</h1>
+		<br>
+<script>
+	/*
+	alert("La edad de Christian es ...")
+	alert("?")
+	*/
+	function saltarLinea() {
+		document.write("<br><br>")
+	}
+	document.write("La edad de Christian es ... <br>");
+	document.write("29");
+	saltarLinea();
+	saltarLinea();
+	document.write("El año de nacimiento de Christian es ... <br>");
+	document.write(2020-29);
+	saltarLinea();
+	saltarLinea();
+	document.write("El promedio de edad de Juan, Pedro y Carlos es ... <br>");
+	document.write((20+25+15)/3);
+	saltarLinea();
+	saltarLinea();
+	document.write("El promedio de edad de Juan, Pedro y Carlos es: " 
+		+  ((20+25+15)/3) +  "<br>");
+	var anho = 2020;
+	imprimir("Juan tiene: " + (anho-2000) + " años");
+	imprimir("Pedro tiene: " + (anho-1995) + " años");
+	imprimir("Carlos tiene: " + (anho-2005) + " años");
+	anho = 2020;
+	imprimir("Jimena tiene: " + (anho-2000) + " años");
+	imprimir("Paola tiene: " + (anho-1995) + " años");
+	imprimir("Laura tiene: " + (anho-2005) + " años");
+  var edadLaura = 15;
+	var edadJimena = 10;
+	var edadPaola = 25;
+  var nombre1 = "Laura";
+	var nombre2 = "Jimena";
+	var nombre3 = "Paola";
+	var promedio = (edadLaura+edadPaola+edadJimena)/3 ;
+	imprimir("el promedio de las edades de " + nombre1 + ", " + nombre2 + " y  " + nombre3 + " es: " + Math.round(promedio) + " años<br>");
+	function imprimir(frase){
+		saltarLinea();
+		document.write(frase);
+	};
+	imprimir("<big>Hola amigos</big>");
+</script>

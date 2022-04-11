@@ -1,0 +1,23 @@
+<meta charset="UTF-8"/>
+<h1>PROGRAMA - CALCULAR LA TABLA DE MULTIPLICAR</h1>
+
+<script>
+	function imprimir(frase) {
+		document.write("<br><br>");
+		document.write(frase);
+		document.write("<br><br>");
+	}
+
+	var multiplicador = 1;
+	var numero = parseInt(prompt("ingrese un numero a multiplicar:"))
+//	alert("Hubo mundial de la fifa en el año " +  anhoMundial);
+	while (multiplicador <= 10) {
+		imprimir(numero + " por " +  multiplicador + " es : " + (multiplicador * numero));
+		multiplicador = multiplicador + 1;
+	}
+	imprimir("fin")
+	for (var multiplicador = 1; multiplicador <= 10; multiplicador++) {
+		imprimir(numero + " por " +  multiplicador + " es : " + (multiplicador * numero));
+	}	
+	imprimir("fin")
+</script>

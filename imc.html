@@ -1,0 +1,44 @@
+<meta charset="UTF-8"/>
+<h1>PROGRAMA</h1>
+
+<script>
+	function imprimir(frase) {
+		document.write("<br><br>");
+		document.write(frase);
+		document.write("<br><br>");
+	}
+	function calcularImc(nombre, peso, altura) {
+		imc = peso / (altura * altura);	
+		imprimir("El imc de " + nombre + " es: " + Math.round(imc));
+	}
+	var peso = (prompt("Informe su peso"));
+	var altura = (prompt("Informe su altura"));
+	var imc = peso /(altura * altura);
+	if (imc < 18.5){
+		imprimir("imc inferior al recomendado");
+	}
+	if (imc >= 18.5){
+		if (imc <25 ){
+			imprimir("imc está dentro del intervalo normal");
+			}
+	}
+	if (imc >= 25){
+		if (imc <30 ){
+		imprimir("imc considerado como sobrepeso");
+		}
+	}
+	if (imc >= 30) {
+		imprimir("Imc considerado como obesidad");
+	}
+	//calcularImc("cristian", prompt("informe su peso"), prompt("informe su altura"));
+	calcularImc("juan", 65, 1.65);
+	calcularImc("pedro", 70, 1.75);
+	calcularImc("ramon",80, 1.95);
+	function calcularIMC2 (peso, altura){
+		imc = peso / (altura * altura);	
+		return imc;
+	}
+	var imcCristian = calcularIMC2(60,1.55);
+	var imcFelipe = calcularIMC2(65,1.65);
+	imprimir("El promedio del imc calculado de Cristian y Felipe es: " + (imcCristian + imcFelipe)/2); 
+</script>
