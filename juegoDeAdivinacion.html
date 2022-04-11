@@ -8,13 +8,19 @@
 		document.write("<br><br>");
 	}
 	var numeroPensado = Math.round(Math.random()*10);
-//	alert(numeroPensado);
-	var numeroLanzado = parseInt(prompt("ingrese un numero entre 0 y 10"));
-	if (numeroPensado == numeroLanzado ) {
-		imprimir("usted acertó, el numero pensado era: " + numeroPensado);
-
+  var intentos = 3;
+  var contador = 1;
+	//	alert(numeroPensado);
+	while (contador <= intentos) {
+		var numeroLanzado = parseInt(prompt("ingrese un numero entre 0 y 10"));
+		if (numeroPensado == numeroLanzado ) {
+			alert("usted acertó, en el intento " + contador + " el numero pensado era: " + numeroPensado);
+			break;
+		}
+		else {
+			alert("usted no acertó");
+		}
+		contador++;
 	}
-	if (numeroPensado	!= numeroLanzado ) {
-		imprimir("usted no acertó, el numero pesado era: " + numeroPensado);
-	}
+			imprimir("el numero pesado era: " + numeroPensado);
 </script>
