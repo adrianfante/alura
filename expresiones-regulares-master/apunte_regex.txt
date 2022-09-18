@@ -1,0 +1,16 @@
+\d digito = [0-9] 
+\w word char = [A-Za-z_0-9]
+\s space
+\b word boundery
+^ inicio
+. cualquier caracter
+? 0 o una aparicion
++ 1 o mas apariciones
+* 0 o mas apariciones
+{m} m apariciones
+{m} al menos m apariciones
+{m, n} entre m y n apariciones
+\ escapa caracteres especiales
+$ ultimo caracter
+() para hacer grupos
+?: lo muestra solo si lo encuentra (se utiliza con ? y los grupos)

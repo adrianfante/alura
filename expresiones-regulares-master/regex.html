@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script>
+	
+		const text = "11a22b33c"
+		//const expresion = new RegExp("(\\d\\d\\w)", "g");
+		const expresion = /(\d\d)(\w)/g;
+		console.log(expresion.test(text));
+		expresion.lastIndex = 0;
+
+		console.log(expresion);
+		while ((result = expresion.exec(text))) {
+			console.log(result);
+		}
+
+	</script>
+</body>
+</html>
